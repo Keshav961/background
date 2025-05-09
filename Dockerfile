@@ -17,4 +17,4 @@ EXPOSE 8503
 
 # Start Streamlit and serve the HTML files
 # CMD sh -c "streamlit run app.py & python -m http.server 8502 --directory /app --bind 0.0.0.0 --file prediction_report.html & python -m http.server 8503 --directory /app --bind 0.0.0.0 --file app.html"
-CMD streamlit run app.py --server.port=8503 --server.address=0.0.0.0
+CMD streamlit run unet_background.py --server.port=8503 --server.address=0.0.0.0
